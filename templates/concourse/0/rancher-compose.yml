@@ -54,10 +54,6 @@ catalog:
 services:
   tsa:
     scale: 1
-    health_check:
-      port: 8080
-      strategy: none
-      request_line: GET "/" "HTTP/1.0"
   worker:
     scale: 1
   db:
